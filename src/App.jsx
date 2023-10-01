@@ -1,4 +1,11 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { AppLayout } from "./ui/AppLayout";
+import { Home } from "./pages/Home";
+import { Headphones } from "./pages/Headphones";
+import { Speakers } from "./pages/Speakers";
+import { Earphones } from "./pages/Earphones";
+import { Cart } from "./pages/Cart";
+import { Checkout } from "./pages/Checkout";
 
 const router = createBrowserRouter([
   {
