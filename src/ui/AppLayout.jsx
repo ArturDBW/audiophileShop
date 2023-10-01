@@ -4,7 +4,7 @@ import { Footer } from "../components/Footer";
 
 export const AppLayout = () => {
   return (
-    <div className="container">
+    <div>
       <Header />
       <main>
         <Outlet />
