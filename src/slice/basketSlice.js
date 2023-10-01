@@ -23,3 +23,5 @@ const basketSlice = createSlice({
 export const { addItem, delateItem, clearBasket } = basketSlice.actions;
 
 export default basketSlice.reducer;
+
+export const getBasket = (state) => state.basket.basket;
