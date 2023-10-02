@@ -1,8 +1,8 @@
 import PropTypes from "prop-types";
 
-export const ArrowRight = ({ children }) => {
+export const ArrowButton = ({ children }) => {
   return (
-    <button className="z-10 flex items-center justify-center tracking-widest transition-all hover:text-[#D87D4A]">
+    <button className="z-10 mx-10 inline-flex items-center justify-center tracking-widest transition-all hover:text-[#D87D4A]">
       {children}
       <svg
         className="ml-3"
@@ -22,6 +22,6 @@ export const ArrowRight = ({ children }) => {
   );
 };
 
-ArrowRight.propTypes = {
+ArrowButton.propTypes = {
   children: PropTypes.string,
 };
