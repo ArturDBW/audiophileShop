@@ -1,3 +1,5 @@
+import { OrangeButton } from "../elements/OrangeButton";
+
 export const Hero = () => {
   return (
     <section className="bg-hero h-[calc(100vh-72px)] bg-cover bg-center">
@@ -11,9 +13,7 @@ export const Hero = () => {
             Experience natural, lifelike audio and exceptional build quality
             made for the passionate music enthusiast.
           </p>
-          <button className="bg-[#D87D4A] px-8 py-4 text-[13px] font-bold tracking-[1px] text-white transition-all hover:bg-[#fbaf85]">
-            SEE PRODUCT
-          </button>
+          <OrangeButton>SEE PRODUCT</OrangeButton>
         </div>
       </div>
     </section>
