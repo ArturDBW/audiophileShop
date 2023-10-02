@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 
 export const Header = () => {
   return (
-    <header className=" bg-[#0E0E0E]">
-      <div className="m-auto flex max-w-[1440px] items-center justify-between border-b border-[#979797] py-6">
+    <header className=" bg-[#1a1919]">
+      <div className="mx-auto flex max-w-[1440px] items-center justify-between border-b border-[#979797] py-6">
         <Logo />
         <nav>
           <ul className="bold space-x-9 text-[13px] font-bold uppercase tracking-[3px] text-white ">
