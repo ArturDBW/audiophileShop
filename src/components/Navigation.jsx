@@ -1,19 +1,20 @@
 import { Link } from "react-router-dom";
+const linkStyles = "transition-all hover:text-[#D87D4A]";
 
 export const Navigation = () => {
   return (
     <nav>
       <ul className="bold space-x-9 text-[13px] font-bold uppercase tracking-[3px] text-white ">
-        <Link className="transition-all hover:text-[#D87D4A]" to="/">
+        <Link to="/" className={linkStyles}>
           Home
         </Link>
-        <Link className="transition-all hover:text-[#D87D4A]" to="/headphones">
+        <Link to="/products?category=headphones" className={linkStyles}>
           Headphones
         </Link>
-        <Link className="transition-all hover:text-[#D87D4A]" to="/speakers">
+        <Link to="/products?category=speakers" className={linkStyles}>
           Speakers
         </Link>
-        <Link className="transition-all hover:text-[#D87D4A]" to="/earphones">
+        <Link to="/products?category=earphones" className={linkStyles}>
           Earphones
         </Link>
       </ul>

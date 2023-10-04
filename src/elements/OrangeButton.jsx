@@ -1,13 +1,18 @@
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
-export const OrangeButton = ({ children }) => {
+export const OrangeButton = ({ children, to }) => {
   return (
-    <button className="bg-[#D87D4A] px-8 py-4 text-[13px] font-bold tracking-[1px] text-white transition-all hover:bg-[#fbaf85]">
+    <Link
+      to={to}
+      className="bg-[#D87D4A] px-8 py-4 text-[13px] font-bold tracking-[1px] text-white transition-all hover:bg-[#fbaf85]"
+    >
       {children}
-    </button>
+    </Link>
   );
 };
 
 OrangeButton.propTypes = {
   children: PropTypes.string,
+  to: PropTypes.string,
 };

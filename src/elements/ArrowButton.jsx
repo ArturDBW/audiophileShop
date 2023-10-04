@@ -1,8 +1,12 @@
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
-export const ArrowButton = ({ children }) => {
+export const ArrowButton = ({ children, to }) => {
   return (
-    <button className="z-10 mx-10 inline-flex items-center justify-center tracking-widest transition-all hover:text-[#D87D4A]">
+    <Link
+      to={to}
+      className="z-10 mx-10 inline-flex items-center justify-center tracking-widest transition-all hover:text-[#D87D4A]"
+    >
       {children}
       <svg
         className="ml-3"
@@ -18,10 +22,11 @@ export const ArrowButton = ({ children }) => {
           fillRule="evenodd"
         />
       </svg>
-    </button>
+    </Link>
   );
 };
 
 ArrowButton.propTypes = {
   children: PropTypes.string,
+  to: PropTypes.string,
 };

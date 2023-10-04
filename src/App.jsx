@@ -1,11 +1,10 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { AppLayout } from "./ui/AppLayout";
 import { Home } from "./pages/Home";
-import { Headphones } from "./pages/Headphones";
-import { Speakers } from "./pages/Speakers";
-import { Earphones } from "./pages/Earphones";
 import { Cart } from "./pages/Cart";
 import { Checkout } from "./pages/Checkout";
+import { Products } from "./pages/Products";
+import { SingleProduct } from "./pages/SingleProduct";
 
 const router = createBrowserRouter([
   {
@@ -16,16 +15,12 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/headphones",
-        element: <Headphones />,
+        path: "/products",
+        element: <Products />,
       },
       {
-        path: "/speakers",
-        element: <Speakers />,
-      },
-      {
-        path: "/earphones",
-        element: <Earphones />,
+        path: "/products/:slug",
+        element: <SingleProduct />,
       },
       {
         path: "/cart",
