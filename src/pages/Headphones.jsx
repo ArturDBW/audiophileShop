@@ -1,3 +1,5 @@
+import { HeaderCategory } from "../components/HeaderCategory";
+
 export const Headphones = () => {
-  return <div>Headphones</div>;
+  return <HeaderCategory>Headphones</HeaderCategory>;
 };
