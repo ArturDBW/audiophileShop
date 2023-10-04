@@ -1,13 +1,13 @@
 import { AboutUs } from "../components/AboutUs";
 import { Hero } from "../components/Hero";
-import { ProdcutsCategory } from "../components/ProdcutsCategory";
+import { ProductsCategory } from "../components/ProductsCategory";
 import { ProductsPreview } from "../components/ProductsPreview";
 
 export const Home = () => {
   return (
     <>
       <Hero />
-      <ProdcutsCategory />
+      <ProductsCategory />
       <ProductsPreview />
       <AboutUs />
     </>

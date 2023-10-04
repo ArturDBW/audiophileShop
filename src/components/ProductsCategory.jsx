@@ -3,7 +3,7 @@ import SpeakersImg from "../assets/shared/desktop/image-category-thumbnail-speak
 import EarphonesImg from "../assets/shared/desktop/image-category-thumbnail-earphones.png";
 import { ArrowButton } from "../elements/ArrowButton";
 
-export const ProdcutsCategory = () => {
+export const ProductsCategory = () => {
   return (
     <section className="mx-auto mb-[200px]  mt-[300px] flex max-w-[1440px] justify-between gap-10 ">
       <div className=" relative  flex flex-1 flex-col justify-end rounded-xl bg-[#f1f1f1] p-10 text-center max-md:h-[200px]">
