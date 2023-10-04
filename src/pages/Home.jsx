@@ -1,14 +1,14 @@
 import { AboutUs } from "../components/AboutUs";
 import { Hero } from "../components/Hero";
 import { ProductsCategory } from "../components/ProductsCategory";
-import { ProductsPreview } from "../components/ProductsPreview";
+import { HomePhotoBanner } from "../components/HomePhotoBanner";
 
 export const Home = () => {
   return (
     <>
       <Hero />
       <ProductsCategory />
-      <ProductsPreview />
+      <HomePhotoBanner />
       <AboutUs />
     </>
   );

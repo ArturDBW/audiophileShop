@@ -4,7 +4,7 @@ import Earphones from "../assets/home/desktop/image-earphones-yx1.jpg";
 import { BlackButton } from "../elements/BlackButton";
 import { TransparentButton } from "../elements/TransparentButton";
 
-export const ProductsPreview = () => {
+export const HomePhotoBanner = () => {
   return (
     <section className="mx-auto grid  max-w-[1440px] grid-cols-2 gap-10 text-white">
       <div className=" col-span-full flex justify-around overflow-hidden rounded-xl  bg-[#D87D4A] pt-24">
