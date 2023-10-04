@@ -3,12 +3,12 @@ import PropTypes from "prop-types";
 import { OrangeButton } from "../elements/OrangeButton";
 
 export const ProductInfo = ({ item }) => {
-  const { name, description, image } = item;
-  //   const con = (item.new = true);
+  const { name, description, image, layout } = item;
+
   return (
     <div className="mx-auto mt-[150px] flex max-w-[1440px] gap-x-[10%] ">
-      <div className={`flex-1 ${item.id === 3 ? "order-1 " : "text-red-700"}`}>
-        <img src={image.desktop} alt="product" />
+      <div className={`flex-1 ${layout === "right" ? "order-1 " : ""}`}>
+        <img src={image.desktop} alt={name} />
       </div>
       <div className=" flex flex-1 flex-col items-start justify-center">
         {item.new ? (
@@ -35,5 +35,6 @@ ProductInfo.propTypes = {
     image: PropTypes.object,
     new: PropTypes.bool,
     id: PropTypes.number,
+    layout: PropTypes.string,
   }),
 };

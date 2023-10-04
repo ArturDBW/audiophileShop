@@ -9,6 +9,7 @@
       "desktop": "src/assets/product-yx1-earphones/desktop/image-product.jpg"
     },
     "category": "earphones",
+    "layout": "left",
     "categoryImage": {
       "mobile": "src/assets/product-yx1-earphones/mobile/image-category-page-preview.jpg",
       "tablet": "src/assets/product-yx1-earphones/tablet/image-category-page-preview.jpg",
@@ -97,6 +98,7 @@
       "desktop": "src/assets/product-xx59-headphones/desktop/image-product.jpg"
     },
     "category": "headphones",
+    "layout": "left",
     "categoryImage": {
       "mobile": "src/assets/product-xx59-headphones/mobile/image-category-page-preview.jpg",
       "tablet": "src/assets/product-xx59-headphones/tablet/image-category-page-preview.jpg",
@@ -181,6 +183,7 @@
       "desktop": "src/assets/product-xx99-mark-one-headphones/desktop/image-product.jpg"
     },
     "category": "headphones",
+    "layout": "right",
     "categoryImage": {
       "mobile": "src/assets/product-xx99-mark-one-headphones/mobile/image-category-page-preview.jpg",
       "tablet": "src/assets/product-xx99-mark-one-headphones/tablet/image-category-page-preview.jpg",
@@ -265,6 +268,7 @@
       "desktop": "src/assets/product-xx99-mark-two-headphones/desktop/image-product.jpg"
     },
     "category": "headphones",
+    "layout": "left",
     "categoryImage": {
       "mobile": "src/assets/product-xx99-mark-two-headphones/mobile/image-category-page-preview.jpg",
       "tablet": "src/assets/product-xx99-mark-two-headphones/tablet/image-category-page-preview.jpg",
@@ -353,6 +357,7 @@
       "desktop": "src/assets/product-zx7-speaker/desktop/image-product.jpg"
     },
     "category": "speakers",
+    "layout": "right",
     "categoryImage": {
       "mobile": "src/assets/product-zx7-speaker/mobile/image-category-page-preview.jpg",
       "tablet": "src/assets/product-zx7-speaker/tablet/image-category-page-preview.jpg",
@@ -441,6 +446,7 @@
       "desktop": "src/assets/product-zx9-speaker/desktop/image-product.jpg"
     },
     "category": "speakers",
+    "layout": "left",
     "categoryImage": {
       "mobile": "src/assets/product-zx9-speaker/mobile/image-category-page-preview.jpg",
       "tablet": "src/assets/product-zx9-speaker/tablet/image-category-page-preview.jpg",
