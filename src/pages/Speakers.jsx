@@ -1,3 +1,13 @@
+import { HeaderCategory } from "../components/HeaderCategory";
+import { ProductsCategory } from "../components/ProductsCategory";
+import { AboutUs } from "../components/AboutUs";
+
 export const Speakers = () => {
-  return <div>Speakers</div>;
+  return (
+    <>
+      <HeaderCategory>Speakers</HeaderCategory>
+      <ProductsCategory />
+      <AboutUs />
+    </>
+  );
 };
