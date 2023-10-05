@@ -23,7 +23,7 @@ export const FeaturesInfoProduct = ({ item }) => {
 const IncludesBoxList = ({ item }) => {
   return (
     <li className="py-1">
-      <span className="mr-6 font-bold text-[#D87D4A]">{item.quantity}x</span>
+      <span className=" mr-6 font-bold text-[#D87D4A]">{item.quantity}x</span>
       <span className="text-[#979797]">{item.item}</span>
     </li>
   );
