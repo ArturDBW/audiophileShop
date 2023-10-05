@@ -5,7 +5,7 @@ export const OrangeButton = ({ children, to }) => {
   return (
     <Link
       to={to}
-      className="bg-[#D87D4A] px-8 py-4 text-[13px] font-bold tracking-[1px] text-white transition-all hover:bg-[#fbaf85]"
+      className="bg-[#D87D4A] px-8 py-4 text-sm font-bold tracking-[1px] text-white transition-all hover:bg-[#fbaf85]"
     >
       {children}
     </Link>
