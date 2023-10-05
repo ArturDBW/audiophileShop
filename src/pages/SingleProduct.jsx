@@ -1,12 +1,10 @@
 import { useParams } from "react-router-dom";
-import data from "../data.json";
 import { ProductInfo } from "../components/ProductInfo";
+import productsData from "../data.json";
 
 export const SingleProduct = () => {
   const { slug } = useParams();
 
-  const singleProduct = data.find((item) => item.slug === slug);
-  console.log(singleProduct);
-  console.log("slug", slug);
+  const singleProduct = productsData.find((item) => item.slug === slug);
   return <ProductInfo item={singleProduct} />;
 };

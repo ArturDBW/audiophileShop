@@ -12,11 +12,9 @@ const mapCategoryToImage = {
 
 const ProductCategory = ({ category }) => {
   return (
-    <div className="relative mt-24 flex flex-1 flex-col justify-end rounded-xl bg-[#f1f1f1] p-10 text-center max-md:h-[200px]">
+    <div className="relative mt-24 flex h-[300px] flex-1 flex-col justify-end rounded-xl bg-[#f1f1f1] p-10 text-center max-md:h-[200px]">
       <img
-        className={
-          "absolute left-1/2 -translate-x-1/2 transform max-xl:top-[-20%] max-lg:top-[-10%] max-md:top-[-35%]"
-        }
+        className="absolute  left-1/2 -translate-x-1/2 transform max-xl:top-[-20%] max-lg:top-[-10%] max-md:top-[-35%]"
         src={mapCategoryToImage[category]}
         alt={category}
       />
