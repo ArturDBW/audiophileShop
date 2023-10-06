@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 import { SuggestProduct } from "./SuggestProduct";
 
 export const SuggestProducts = ({ item }) => {
@@ -13,4 +15,18 @@ export const SuggestProducts = ({ item }) => {
       </div>
     </>
   );
+};
+
+SuggestProducts.propTypes = {
+  item: PropTypes.shape({
+    others: PropTypes.arrayOf(
+      PropTypes.shape({
+        name: PropTypes.string.isRequired,
+        slug: PropTypes.string.isRequired,
+        image: PropTypes.shape({
+          desktop: PropTypes.string.isRequired,
+        }).isRequired,
+      }),
+    ).isRequired,
+  }).isRequired,
 };
