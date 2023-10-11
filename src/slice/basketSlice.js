@@ -9,7 +9,16 @@ const basketSlice = createSlice({
   initialState,
   reducers: {
     addItem(state, action) {
-      state.basket.push(action.payload);
+      const existingProduct = state.basket.find(
+        (item) => item.id === action.payload.id,
+      );
+      if (existingProduct) {
+        existingProduct.quantity++;
+        existingProduct.totalPrice =
+          existingProduct.quantity * existingProduct.unitPrice;
+      } else {
+        state.basket.push(action.payload);
+      }
     },
     delateItem(state, action) {
       state.basket = state.basket.filter((item) => item.id !== action.payload);
@@ -30,7 +39,13 @@ const basketSlice = createSlice({
   },
 });
 
-export const { addItem, delateItem, clearBasket } = basketSlice.actions;
+export const {
+  addItem,
+  delateItem,
+  increaseItemQuantity,
+  decreaseItemQuantity,
+  clearBasket,
+} = basketSlice.actions;
 
 export default basketSlice.reducer;
 
