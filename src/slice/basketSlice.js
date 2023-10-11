@@ -14,6 +14,16 @@ const basketSlice = createSlice({
     delateItem(state, action) {
       state.basket = state.basket.filter((item) => item.id !== action.payload);
     },
+    increaseItemQuantity(state, action) {
+      const item = state.basket.find((item) => item.id === action.payload);
+      item.quantity++;
+      item.totalPrice = item.quantity * item.unitPrice;
+    },
+    decreaseItemQuantity(state, action) {
+      const item = state.basket.find((item) => item.id === action.payload);
+      item.quantity--;
+      item.totalPrice = item.quantity * item.unitPrice;
+    },
     clearBasket(state) {
       state.basket = [];
     },

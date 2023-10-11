@@ -13,7 +13,9 @@ export const MainInfoProduct = ({ item }) => {
     const newCartProduct = {
       id,
       name,
-      price,
+      quantity: 1,
+      unitPrice: price,
+      totalPrice: price * 1,
     };
     dispatch(addItem(newCartProduct));
   };
