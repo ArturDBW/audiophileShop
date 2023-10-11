@@ -9,8 +9,8 @@ import { AboutUs } from "../components/AboutUs";
 
 export const SingleProduct = () => {
   const { slug } = useParams();
-
   const singleProduct = productsData.find((item) => item.slug === slug);
+
   return (
     <>
       <MainInfoProduct item={singleProduct} />

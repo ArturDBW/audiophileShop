@@ -25,3 +25,9 @@ export const { addItem, delateItem, clearBasket } = basketSlice.actions;
 export default basketSlice.reducer;
 
 export const getBasket = (state) => state.basket.basket;
+
+export const getTotalCartQuantity = (state) =>
+  state.basket.basket.reduce((sum, curr) => sum + curr.quantity, 0);
+
+export const getTotalCartPrice = (state) =>
+  state.basket.basket.reduce((sum, curr) => sum + curr.totalPrice, 0);

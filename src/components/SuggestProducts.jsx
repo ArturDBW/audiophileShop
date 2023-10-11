@@ -1,5 +1,4 @@
 import PropTypes from "prop-types";
-
 import { SuggestProduct } from "./SuggestProduct";
 
 export const SuggestProducts = ({ item }) => {
