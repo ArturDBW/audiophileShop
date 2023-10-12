@@ -5,7 +5,7 @@ import { useDispatch } from "react-redux";
 import { addItem } from "../slice/basketSlice";
 
 export const MainInfoProduct = ({ item }) => {
-  const { name, description, image, price, id } = item;
+  const { name, shortName, description, image, price, id } = item;
 
   const dispatch = useDispatch();
 
@@ -13,9 +13,11 @@ export const MainInfoProduct = ({ item }) => {
     const newCartProduct = {
       id,
       name,
+      shortName,
       quantity: 1,
       unitPrice: price,
       totalPrice: price * 1,
+      image: image.cart,
     };
     dispatch(addItem(newCartProduct));
   };
@@ -48,6 +50,7 @@ export const MainInfoProduct = ({ item }) => {
 MainInfoProduct.propTypes = {
   item: PropTypes.shape({
     name: PropTypes.string,
+    shortName: PropTypes.string,
     slug: PropTypes.string,
     category: PropTypes.string,
     description: PropTypes.string,
