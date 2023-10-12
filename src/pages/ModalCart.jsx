@@ -16,7 +16,7 @@ export const ModalCart = ({ setOpenModalCart, openModalCart }) => {
         onClick={(e) => {
           e.stopPropagation();
         }}
-        className="fixed right-0 top-0 rounded-lg bg-white p-6"
+        className="fixed right-60 top-20 rounded-lg bg-white p-6"
       >
         <div className="mb-5 flex items-center justify-between">
           <h3 className="text-lg font-bold">Cart (3)</h3>
