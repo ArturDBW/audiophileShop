@@ -1,11 +1,12 @@
 import PropTypes from "prop-types";
-import { useSelector } from "react-redux";
-import { getBasket } from "../slice/basketSlice";
+import { useDispatch, useSelector } from "react-redux";
+import { clearBasket, getBasket } from "../slice/basketSlice";
 import { CartProduct } from "../components/CartProduct";
 import { OrangeButton } from "../elements/OrangeButton";
 
 export const ModalCart = ({ setOpenModalCart, openModalCart }) => {
   const cart = useSelector(getBasket);
+  const dispatch = useDispatch();
   console.log(cart);
   return (
     <div
@@ -20,7 +21,12 @@ export const ModalCart = ({ setOpenModalCart, openModalCart }) => {
       >
         <div className="mb-5 flex items-center justify-between">
           <h3 className="text-lg font-bold">Cart (3)</h3>
-          <button>Remove All</button>
+          <button
+            onClick={() => dispatch(clearBasket())}
+            className="text-[#979797] hover:underline"
+          >
+            Remove All
+          </button>
         </div>
         {cart.map((item) => (
           <CartProduct item={item} key={item.id} />
