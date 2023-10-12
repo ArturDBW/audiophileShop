@@ -5,7 +5,7 @@ import { Navigation } from "./Navigation";
 export const Header = ({ openModalCart, setOpenModalCart }) => {
   return (
     <header className="bg-[#1a1919]">
-      <div className="relative mx-auto flex max-w-[1440px] items-center justify-between border-b border-[#979797] py-6">
+      <div className=" mx-auto flex max-w-[1440px] items-center justify-between border-b border-[#979797] py-6">
         <Logo />
         <Navigation />
         <Basket

@@ -1,14 +1,23 @@
+import PropTypes from "prop-types";
 import { useSelector } from "react-redux";
 import { getBasket } from "../slice/basketSlice";
 import { CartProduct } from "../components/CartProduct";
 import { OrangeButton } from "../elements/OrangeButton";
 
-export const ModalCart = () => {
+export const ModalCart = ({ setOpenModalCart, openModalCart }) => {
   const cart = useSelector(getBasket);
   console.log(cart);
   return (
-    <div className="absolute  h-full w-full  overflow-hidden bg-black bg-opacity-20">
-      <div className="fixed right-[100px] top-[100px] rounded-lg bg-white p-6">
+    <div
+      onClick={() => setOpenModalCart(!openModalCart)}
+      className="absolute  left-0 top-0  h-full w-full overflow-hidden bg-black bg-opacity-20"
+    >
+      <div
+        onClick={(e) => {
+          e.stopPropagation();
+        }}
+        className="fixed right-0 top-0 rounded-lg bg-white p-6"
+      >
         <div className="mb-5 flex items-center justify-between">
           <h3 className="text-lg font-bold">Cart (3)</h3>
           <button>Remove All</button>
@@ -26,4 +35,9 @@ export const ModalCart = () => {
       </div>
     </div>
   );
+};
+
+ModalCart.propTypes = {
+  openModalCart: PropTypes.bool.isRequired,
+  setOpenModalCart: PropTypes.func.isRequired,
 };

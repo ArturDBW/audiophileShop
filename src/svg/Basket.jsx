@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 export const Basket = ({ openModalCart, setOpenModalCart }) => {
   return (
     <svg
@@ -14,4 +16,9 @@ export const Basket = ({ openModalCart, setOpenModalCart }) => {
       />
     </svg>
   );
+};
+
+Basket.propTypes = {
+  openModalCart: PropTypes.bool.isRequired,
+  setOpenModalCart: PropTypes.func.isRequired,
 };

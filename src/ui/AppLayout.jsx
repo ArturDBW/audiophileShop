@@ -10,7 +10,7 @@ export const AppLayout = () => {
   if (openModalCart === true) {
     document.body.style.overflow = "hidden";
   } else {
-    document.body.style.overflow = "auto";
+    document.body.style.overflow = "visible";
   }
 
   return (
@@ -19,7 +19,12 @@ export const AppLayout = () => {
         openModalCart={openModalCart}
         setOpenModalCart={setOpenModalCart}
       />
-      {openModalCart && <ModalCart />}
+      {openModalCart && (
+        <ModalCart
+          openModalCart={openModalCart}
+          setOpenModalCart={setOpenModalCart}
+        />
+      )}
       <main>
         <Outlet />
       </main>
