@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-import { OrangeButton } from "../elements/OrangeButton";
+import { LinkButton } from "../elements/LinkButton";
 
 export const SuggestProduct = ({ item }) => {
   const { image, name, slug } = item;
@@ -11,7 +11,12 @@ export const SuggestProduct = ({ item }) => {
       </div>
       <div className="flex flex-col items-center justify-center">
         <h3 className="py-10 text-2xl font-bold">{name}</h3>
-        <OrangeButton to={`/products/${slug}`}>See product</OrangeButton>
+        <LinkButton
+          to={`/products/${slug}`}
+          backgroundStyleClass={`bg-[#D87D4A] hover:bg-[#fbaf85] text-white`}
+        >
+          See product
+        </LinkButton>
       </div>
     </div>
   );

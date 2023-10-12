@@ -1,8 +1,7 @@
 import ZX9Speaker from "../assets/home/desktop/image-speaker-zx9.png";
 import ZX7Speaker from "../assets/home/desktop/image-speaker-zx7.jpg";
 import Earphones from "../assets/home/desktop/image-earphones-yx1.jpg";
-import { BlackButton } from "../elements/BlackButton";
-import { TransparentButton } from "../elements/TransparentButton";
+import { LinkButton } from "../elements/LinkButton";
 
 export const HomePhotoBanner = () => {
   return (
@@ -22,14 +21,20 @@ export const HomePhotoBanner = () => {
             Upgrade to premium speakers that are phenomenally built to deliver
             truly remarkable sound.
           </p>
-          <BlackButton>SEE PRODUCT</BlackButton>
+          <LinkButton backgroundStyleClass={`bg-black hover:bg-[#4C4C4C]`}>
+            SEE PRODUCT
+          </LinkButton>
         </div>
       </div>
       <div className="relative col-span-full">
         <img className="w-full rounded-xl" src={ZX7Speaker} alt="ZX7 Speaker" />
         <div className="absolute left-[64px] top-[30%] text-black">
           <h2 className="mb-10 text-[32px] font-bold">ZX7 SPEAKER</h2>
-          <TransparentButton>SEE PRODUCT</TransparentButton>
+          <LinkButton
+            backgroundStyleClass={`hover:bg-[#000] hover:text-white text-black bg-transparent border border-black`}
+          >
+            SEE PRODUCT
+          </LinkButton>
         </div>
       </div>
       <div>
@@ -42,7 +47,11 @@ export const HomePhotoBanner = () => {
       <div className=" rounded-xl bg-[#F1F1F1] text-black">
         <div className="flex h-full flex-col items-start justify-center p-16">
           <h2 className="mb-10 text-[32px] font-bold">YX1 EARPHONES</h2>
-          <TransparentButton>SEE PRODUCT</TransparentButton>
+          <LinkButton
+            backgroundStyleClass={`hover:bg-[#000] hover:text-white text-black bg-transparent border border-black`}
+          >
+            SEE PRODUCT
+          </LinkButton>
         </div>
       </div>
     </section>

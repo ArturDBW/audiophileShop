@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import { useDispatch, useSelector } from "react-redux";
 import { clearBasket, getBasket } from "../slice/basketSlice";
 import { CartProduct } from "../components/CartProduct";
-import { OrangeButton } from "../elements/OrangeButton";
+import { LinkButton } from "../elements/LinkButton";
 
 export const ModalCart = ({ setOpenModalCart, openModalCart }) => {
   const cart = useSelector(getBasket);
@@ -20,7 +20,7 @@ export const ModalCart = ({ setOpenModalCart, openModalCart }) => {
         className="fixed right-60 top-20 rounded-lg bg-white p-6"
       >
         <div className="mb-5 flex items-center justify-between">
-          <h3 className="text-lg font-bold">Cart (3)</h3>
+          <h3 className="text-lg font-bold">Cart ({cart.length})</h3>
           <button
             onClick={() => dispatch(clearBasket())}
             className="text-[#979797] hover:underline"
@@ -35,8 +35,13 @@ export const ModalCart = ({ setOpenModalCart, openModalCart }) => {
           <span>Total</span>
           <span className="text-lg font-bold">$4332</span>
         </div>
-        <div className="flex justify-stretch">
-          <OrangeButton>CHECKOUT</OrangeButton>
+        <div>
+          <LinkButton
+            strechStyleClass={`flex justify-center`}
+            backgroundStyleClass={`bg-[#D87D4A] hover:bg-[#fbaf85] text-white`}
+          >
+            CHECKOUT
+          </LinkButton>
         </div>
       </div>
     </div>

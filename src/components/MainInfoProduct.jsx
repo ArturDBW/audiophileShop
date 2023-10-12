@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { OrangeButton } from "../elements/OrangeButton";
+import { LinkButton } from "../elements/LinkButton";
 import { useDispatch } from "react-redux";
 import { addItem } from "../slice/basketSlice";
 import { useState } from "react";
@@ -57,7 +57,12 @@ export const MainInfoProduct = ({ item }) => {
               +
             </button>
           </div>
-          <OrangeButton onClick={handleAddToCart}>ADD TO CART</OrangeButton>
+          <LinkButton
+            onClick={handleAddToCart}
+            backgroundStyleClass={`bg-[#D87D4A] hover:bg-[#fbaf85] text-white`}
+          >
+            ADD TO CART
+          </LinkButton>
         </div>
       </div>
     </div>

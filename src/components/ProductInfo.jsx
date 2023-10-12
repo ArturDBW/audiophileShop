@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-import { OrangeButton } from "../elements/OrangeButton";
+import { LinkButton } from "../elements/LinkButton";
 
 export const ProductInfo = ({ item }) => {
   const { name, slug, description, image, layout } = item;
@@ -20,7 +20,12 @@ export const ProductInfo = ({ item }) => {
           {name}
         </h4>
         <p className="py-10 text-base text-[#979797]">{description}</p>
-        <OrangeButton to={`/products/${slug}`}>SEE PRODUCT</OrangeButton>
+        <LinkButton
+          to={`/products/${slug}`}
+          backgroundStyleClass={`bg-[#D87D4A] hover:bg-[#fbaf85] text-white`}
+        >
+          SEE PRODUCT
+        </LinkButton>
       </div>
     </div>
   );
