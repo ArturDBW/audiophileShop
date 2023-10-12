@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { Logo } from "../svg/Logo";
 import { Basket } from "../svg/Basket";
 import { Navigation } from "./Navigation";
@@ -15,4 +16,9 @@ export const Header = ({ openModalCart, setOpenModalCart }) => {
       </div>
     </header>
   );
+};
+
+Header.propTypes = {
+  openModalCart: PropTypes.bool.isRequired,
+  setOpenModalCart: PropTypes.func.isRequired,
 };

@@ -7,6 +7,11 @@ import { LinkButton } from "../elements/LinkButton";
 export const ModalCart = ({ setOpenModalCart, openModalCart }) => {
   const cart = useSelector(getBasket);
   const dispatch = useDispatch();
+
+  const totalAmount = cart.reduce((acc, item) => {
+    return acc + item.totalPrice;
+  }, 0);
+
   console.log(cart);
   return (
     <div
@@ -32,11 +37,12 @@ export const ModalCart = ({ setOpenModalCart, openModalCart }) => {
           <CartProduct item={item} key={item.id} />
         ))}
         <div className="my-5 flex items-center justify-between">
-          <span>Total</span>
-          <span className="text-lg font-bold">$4332</span>
+          <span className="text-[#979797]">TOTAL</span>
+          <span className="text-lg font-bold">${totalAmount}</span>
         </div>
         <div>
           <LinkButton
+            to={"/checkout"}
             strechStyleClass={`flex justify-center`}
             backgroundStyleClass={`bg-[#D87D4A] hover:bg-[#fbaf85] text-white`}
           >

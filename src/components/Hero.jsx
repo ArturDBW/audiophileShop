@@ -14,6 +14,7 @@ export const Hero = () => {
             made for the passionate music enthusiast.
           </p>
           <LinkButton
+            to={"/products/xx99-mark-two-headphones"}
             backgroundStyleClass={`bg-[#D87D4A] hover:bg-[#fbaf85] text-white`}
           >
             SEE PRODUCT
