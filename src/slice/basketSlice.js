@@ -32,6 +32,9 @@ const basketSlice = createSlice({
       const item = state.basket.find((item) => item.id === action.payload);
       item.quantity--;
       item.totalPrice = item.quantity * item.unitPrice;
+
+      if (item.quantity === 0)
+        basketSlice.caseReducers.delateItem(state, action);
     },
     clearBasket(state) {
       state.basket = [];
