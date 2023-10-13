@@ -8,8 +8,8 @@ export const ModalCart = ({ setOpenModalCart, openModalCart }) => {
   const cart = useSelector(getBasket);
   const dispatch = useDispatch();
 
-  const totalAmount = cart.reduce((acc, item) => {
-    return acc + item.totalPrice;
+  const totalAmount = cart.reduce((acc, curr) => {
+    return acc + curr.totalPrice;
   }, 0);
 
   console.log(cart);
