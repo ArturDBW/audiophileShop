@@ -5,7 +5,15 @@ import { LinkButton } from "../elements/LinkButton";
 
 export const Summary = () => {
   const cart = useSelector(getBasket);
-  console.log(cart);
+
+  const totalAmount = cart.reduce((acc, curr) => {
+    return acc + curr.totalPrice;
+  }, 0);
+
+  const shippingCost = 50;
+  const vatCost = totalAmount * 0.23;
+  const fullOrderPrice = totalAmount + shippingCost;
+
   return (
     <div className="mt-10  flex-grow-[1] items-center rounded-lg bg-white p-6">
       <h4 className="mb-4 text-lg font-bold">SUMMARY</h4>
@@ -14,19 +22,19 @@ export const Summary = () => {
       ))}
       <div className="flex justify-between py-1">
         <span className="text-[#979797]">TOTAL</span>
-        <span className="font-bold">$ 5324</span>
+        <span className="font-bold">$ {totalAmount}</span>
       </div>
       <div className="flex justify-between py-1">
         <span className="text-[#979797]">SHIPPING</span>
-        <span className="font-bold">$ 50</span>
+        <span className="font-bold">$ {shippingCost}</span>
       </div>
       <div className="flex justify-between py-1">
         <span className="text-[#979797]">VAT (INCLUDED)</span>
-        <span className="font-bold">$ 1079</span>
+        <span className="font-bold">$ {vatCost}</span>
       </div>
       <div className="flex justify-between py-4">
         <span className="text-[#979797]">GRAND TOTAL</span>
-        <span className="font-bold text-[#D87D4A]">$ 5433</span>
+        <span className="font-bold text-[#D87D4A]">$ {fullOrderPrice}</span>
       </div>
       <LinkButton
         strechStyleClass={`flex justify-center`}
