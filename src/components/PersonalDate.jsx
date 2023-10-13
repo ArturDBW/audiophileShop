@@ -4,7 +4,7 @@ import { ShippingInfo } from "./ShippingInfo";
 
 export const PersonalDate = () => {
   return (
-    <div className="col-start-1 col-end-3 mt-10 bg-white">
+    <div className="mt-10 flex-grow-[2] rounded-lg bg-white p-6">
       <h2 className="text-4xl font-bold">CHECKOUT</h2>
       <div>
         <BillingDetails />
