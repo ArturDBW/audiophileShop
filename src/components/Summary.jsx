@@ -15,7 +15,7 @@ export const Summary = () => {
   const fullOrderPrice = totalAmount + shippingCost;
 
   return (
-    <div className="mt-10  flex-grow-[1] items-center rounded-lg bg-white p-6">
+    <div className="my-10  flex-grow-[1] items-center rounded-lg bg-white p-6">
       <h4 className="mb-4 text-lg font-bold">SUMMARY</h4>
       {cart.map((item) => (
         <CartProduct key={item.id} item={item} />

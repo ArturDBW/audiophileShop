@@ -6,7 +6,7 @@ import { Instagram } from "../svg/Instagram";
 
 export const Footer = () => {
   return (
-    <footer className="mt-[200px]  bg-[#1a1919]">
+    <footer className=" bg-[#1a1919]">
       <div className="mx-auto max-w-[1440px] py-12">
         <div className="flex justify-between">
           <Logo />

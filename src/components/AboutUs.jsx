@@ -2,7 +2,7 @@ import headphones from "../../src/assets/shared/desktop/image-best-gear.jpg";
 
 export const AboutUs = () => {
   return (
-    <section className="mx-auto mt-[200px] flex max-w-[1440px] gap-10">
+    <section className="mx-auto mb-[150px] mt-[200px] flex max-w-[1440px] gap-10">
       <div className="mb-10 flex flex-1 flex-col justify-center">
         <div className="w-[80%]">
           <h2 className="mb-10 text-[40px] font-bold uppercase leading-[45px]">
