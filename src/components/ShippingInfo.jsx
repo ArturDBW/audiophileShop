@@ -15,7 +15,7 @@ export const ShippingInfo = () => {
           <span className="mb-1 text-sm font-bold text-black">ZIP Code</span>
           <input
             type="text"
-            placeholder="120091"
+            placeholder="120099"
             className="rounded-lg border border-[#CFCFCF] px-4 py-3 text-sm font-bold outline-[#D87D4A]"
           />
         </form>
