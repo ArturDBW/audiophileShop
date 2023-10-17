@@ -2,6 +2,8 @@ import { useSelector } from "react-redux";
 import { getBasket } from "../slice/basketSlice";
 import { CartProduct } from "./CartProduct";
 import { LinkButton } from "../elements/LinkButton";
+import { useState } from "react";
+import { FinalInfo } from "./FinalInfo";
 
 export const Summary = () => {
   const cart = useSelector(getBasket);
@@ -13,6 +15,8 @@ export const Summary = () => {
   const shippingCost = 50;
   const vatCost = totalAmount * 0.23;
   const fullOrderPrice = totalAmount + shippingCost;
+
+  const [openModalFinalInfo, setOpenModalFinalInfo] = useState(false);
 
   return (
     <div className="my-10  flex-grow-[1] items-center rounded-lg bg-white p-6">
@@ -37,11 +41,13 @@ export const Summary = () => {
         <span className="font-bold text-[#D87D4A]">$ {fullOrderPrice}</span>
       </div>
       <LinkButton
+        onClick={() => setOpenModalFinalInfo(!openModalFinalInfo)}
         strechStyleClass={`flex justify-center`}
         backgroundStyleClass={`bg-[#D87D4A] hover:bg-[#fbaf85] text-white`}
       >
         CONTINUE & PAY
       </LinkButton>
+      {openModalFinalInfo && <FinalInfo />}
     </div>
   );
 };

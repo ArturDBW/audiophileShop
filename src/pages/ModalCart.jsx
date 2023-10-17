@@ -12,7 +12,6 @@ export const ModalCart = ({ setOpenModalCart, openModalCart }) => {
     return acc + curr.totalPrice;
   }, 0);
 
-  console.log(cart);
   return (
     <div
       onClick={() => setOpenModalCart(!openModalCart)}
