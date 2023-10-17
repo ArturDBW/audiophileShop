@@ -5,7 +5,7 @@ import {
 } from "../slice/basketSlice";
 import { useDispatch } from "react-redux";
 
-export const CartProduct = ({ item }) => {
+export const CartProduct = ({ item, canChangeQuantity }) => {
   const { image, shortName, totalPrice, id, quantity } = item;
 
   const dispatch = useDispatch();
@@ -22,21 +22,25 @@ export const CartProduct = ({ item }) => {
         </div>
       </div>
       <div>
-        <div className="flex items-center space-x-6 bg-[#F1F1F1] text-sm font-bold tracking-[1px]">
-          <button
-            onClick={() => dispatch(decreaseItemQuantity(id))}
-            className="px-2 py-2 text-[#979797]"
-          >
-            -
-          </button>
-          <span className="w-2 text-center">{quantity}</span>
-          <button
-            onClick={() => dispatch(increaseItemQuantity(id))}
-            className="px-2 py-2 text-[#979797]"
-          >
-            +
-          </button>
-        </div>
+        {canChangeQuantity ? (
+          <div className="flex items-center space-x-6 bg-[#F1F1F1] text-sm font-bold tracking-[1px]">
+            <button
+              onClick={() => dispatch(decreaseItemQuantity(id))}
+              className="px-2 py-2 text-[#979797]"
+            >
+              -
+            </button>
+            <span className="w-2 text-center">{quantity}</span>
+            <button
+              onClick={() => dispatch(increaseItemQuantity(id))}
+              className="px-2 py-2 text-[#979797]"
+            >
+              +
+            </button>
+          </div>
+        ) : (
+          <span className="text-[#979797]">x{quantity}</span>
+        )}
       </div>
     </div>
   );
@@ -50,4 +54,5 @@ CartProduct.propTypes = {
     id: PropTypes.number.isRequired,
     quantity: PropTypes.number.isRequired,
   }).isRequired,
+  canChangeQuantity: PropTypes.bool.isRequired,
 };

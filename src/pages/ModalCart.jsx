@@ -34,7 +34,7 @@ export const ModalCart = ({ setOpenModalCart, openModalCart }) => {
           </button>
         </div>
         {cart.map((item) => (
-          <CartProduct item={item} key={item.id} />
+          <CartProduct item={item} key={item.id} canChangeQuantity={true} />
         ))}
         <div className="my-5 flex items-center justify-between">
           <span className="text-[#979797]">TOTAL</span>

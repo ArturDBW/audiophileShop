@@ -18,7 +18,7 @@ export const Summary = () => {
     <div className="my-10  flex-grow-[1] items-center rounded-lg bg-white p-6">
       <h4 className="mb-4 text-lg font-bold">SUMMARY</h4>
       {cart.map((item) => (
-        <CartProduct key={item.id} item={item} />
+        <CartProduct key={item.id} item={item} canChangeQuantity={false} />
       ))}
       <div className="flex justify-between py-1">
         <span className="text-[#979797]">TOTAL</span>
