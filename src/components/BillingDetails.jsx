@@ -1,4 +1,6 @@
 export const BillingDetails = () => {
+  const inputStyles = `rounded-lg border border-[#CFCFCF] px-4 py-3 text-sm font-bold outline-[#D87D4A]`;
+
   return (
     <div>
       <h3 className="mb-4 mt-8 font-bold text-[#D87D4A]">BILLING DETAILS</h3>
@@ -8,7 +10,7 @@ export const BillingDetails = () => {
           <input
             type="text"
             placeholder="Alexi Ramos"
-            className="rounded-lg border border-[#CFCFCF] px-4 py-3 text-sm font-bold outline-[#D87D4A]"
+            className={inputStyles}
           />
         </form>
         <form className="flex flex-col">
@@ -18,7 +20,7 @@ export const BillingDetails = () => {
           <input
             type="email"
             placeholder="alramos@gmail.com"
-            className="rounded-lg border border-[#CFCFCF] px-4 py-3 text-sm font-bold outline-[#D87D4A]"
+            className={inputStyles}
           />
         </form>
         <form className="col-span-full flex flex-col">
@@ -28,7 +30,7 @@ export const BillingDetails = () => {
           <input
             type="text"
             placeholder="+1 202-511-0000"
-            className="rounded-lg border border-[#CFCFCF] px-4 py-3 text-sm font-bold outline-[#D87D4A]"
+            className={inputStyles}
           />
         </form>
       </div>
