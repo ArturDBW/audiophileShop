@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { clearBasket, getBasket } from "../slice/basketSlice";
 import { CartProduct } from "../components/CartProduct";
 import { LinkButton } from "../elements/LinkButton";
+import { EmptyCart } from "../components/EmptyCart";
 
 export const ModalCart = ({ setOpenModalCart, openModalCart }) => {
   const cart = useSelector(getBasket);
@@ -24,31 +25,43 @@ export const ModalCart = ({ setOpenModalCart, openModalCart }) => {
         }}
         className="fixed right-60 top-20 rounded-lg bg-white p-6"
       >
-        <div className="mb-5 flex items-center justify-between">
-          <h3 className="text-lg font-bold">Cart ({cart.length})</h3>
-          <button
-            onClick={() => dispatch(clearBasket())}
-            className="text-[#979797] hover:underline"
-          >
-            Remove All
-          </button>
-        </div>
-        {cart.map((item) => (
-          <CartProduct item={item} key={item.id} canChangeQuantity={true} />
-        ))}
-        <div className="my-5 flex items-center justify-between">
-          <span className="text-[#979797]">TOTAL</span>
-          <span className="text-lg font-bold">${totalAmount}</span>
-        </div>
-        <div>
-          <LinkButton
-            to={"/checkout"}
-            strechStyleClass={`flex justify-center`}
-            backgroundStyleClass={`bg-[#D87D4A] hover:bg-[#fbaf85] text-white`}
-          >
-            CHECKOUT
-          </LinkButton>
-        </div>
+        {cart.length < 1 ? (
+          <EmptyCart />
+        ) : (
+          <>
+            <div className="mb-5 flex items-center justify-between">
+              <h3 className="text-lg font-bold">Cart ({cart.length})</h3>
+              <button
+                onClick={() => dispatch(clearBasket())}
+                className="text-[#979797] hover:underline"
+              >
+                Remove All
+              </button>
+            </div>
+            <>
+              {cart.map((item) => (
+                <CartProduct
+                  item={item}
+                  key={item.id}
+                  canChangeQuantity={true}
+                />
+              ))}
+            </>
+            <div className="my-5 flex items-center justify-between">
+              <span className="text-[#979797]">TOTAL</span>
+              <span className="text-lg font-bold">${totalAmount}</span>
+            </div>
+            <div>
+              <LinkButton
+                to={"/checkout"}
+                strechStyleClass={`flex justify-center`}
+                backgroundStyleClass={`bg-[#D87D4A] hover:bg-[#fbaf85] text-white`}
+              >
+                CHECKOUT
+              </LinkButton>
+            </div>
+          </>
+        )}
       </div>
     </div>
   );
