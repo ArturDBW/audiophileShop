@@ -34,7 +34,7 @@ export const Summary = () => {
       </div>
       <div className="flex justify-between py-1">
         <span className="text-[#979797]">VAT (INCLUDED)</span>
-        <span className="font-bold">$ {vatCost}</span>
+        <span className="font-bold">$ {vatCost.toFixed(2)}</span>
       </div>
       <div className="flex justify-between py-4">
         <span className="text-[#979797]">GRAND TOTAL</span>

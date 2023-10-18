@@ -8,7 +8,6 @@ import { EmptyCart } from "../components/EmptyCart";
 export const ModalCart = ({ setOpenModalCart, openModalCart }) => {
   const cart = useSelector(getBasket);
   const dispatch = useDispatch();
-  console.log(cart);
 
   const totalAmount = cart.reduce((acc, curr) => {
     return acc + curr.totalPrice;
@@ -54,6 +53,7 @@ export const ModalCart = ({ setOpenModalCart, openModalCart }) => {
             <div>
               <LinkButton
                 to={"/checkout"}
+                onClick={() => setOpenModalCart(!openModalCart)}
                 strechStyleClass={`flex justify-center`}
                 backgroundStyleClass={`bg-[#D87D4A] hover:bg-[#fbaf85] text-white`}
               >

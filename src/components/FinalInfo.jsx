@@ -1,17 +1,14 @@
 import PropTypes from "prop-types";
 import { LinkButton } from "../elements/LinkButton";
 import { OrderConfirmation } from "../svg/OrderConfirmation";
-import { useSelector } from "react-redux";
-import { getBasket } from "../slice/basketSlice";
+import { useDispatch, useSelector } from "react-redux";
+import { clearBasket, getBasket } from "../slice/basketSlice";
 import { CartProduct } from "./CartProduct";
 import { useState } from "react";
 
-export const FinalInfo = ({
-  openModalFinalInfo,
-  setOpenModalFinalInfo,
-  fullOrderPrice,
-}) => {
+export const FinalInfo = ({ fullOrderPrice }) => {
   const cart = useSelector(getBasket);
+  const dispatch = useDispatch();
   const firstProduct = [cart[0]];
   const restProducts = cart.slice(1);
 
@@ -65,7 +62,8 @@ export const FinalInfo = ({
           </div>
         </div>
         <LinkButton
-          onClick={() => setOpenModalFinalInfo(!openModalFinalInfo)}
+          to={"/"}
+          onClick={() => dispatch(clearBasket())}
           strechStyleClass={`flex justify-center`}
           backgroundStyleClass={`bg-[#D87D4A] hover:bg-[#fbaf85] text-white`}
         >
