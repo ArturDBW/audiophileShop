@@ -13,6 +13,11 @@ export const FinalInfo = ({ fullOrderPrice }) => {
   const restProducts = cart.slice(1);
 
   const [showMoreProducts, setShowMoreProducts] = useState(false);
+  const clearBasketAndLinkToHome = () => {
+    dispatch(clearBasket());
+    setShowMoreProducts(!showMoreProducts);
+    document.body.style.overflow = "visible";
+  };
 
   return (
     <div className="absolute  left-0 top-0  h-full w-full overflow-hidden bg-black bg-opacity-20">
@@ -63,7 +68,7 @@ export const FinalInfo = ({ fullOrderPrice }) => {
         </div>
         <LinkButton
           to={"/"}
-          onClick={() => dispatch(clearBasket())}
+          onClick={clearBasketAndLinkToHome}
           strechStyleClass={`flex justify-center`}
           backgroundStyleClass={`bg-[#D87D4A] hover:bg-[#fbaf85] text-white`}
         >

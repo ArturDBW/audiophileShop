@@ -3,6 +3,7 @@ import { LinkButton } from "../elements/LinkButton";
 import { useDispatch } from "react-redux";
 import { addItem } from "../slice/basketSlice";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export const MainInfoProduct = ({ item }) => {
   const { name, shortName, description, image, price, id } = item;
@@ -15,7 +16,7 @@ export const MainInfoProduct = ({ item }) => {
     if (quantityNumber <= 1) return;
     setQuantityNumber(quantityNumber - 1);
   };
-
+  const navigate = useNavigate();
   const dispatch = useDispatch();
 
   const handleAddToCart = () => {
@@ -32,9 +33,15 @@ export const MainInfoProduct = ({ item }) => {
   };
 
   return (
-    <div className="mx-auto mt-36 flex max-w-[1440px] gap-x-[10%]">
+    <div className="mx-auto mt-24 flex max-w-[1440px] gap-x-[10%]">
       <div className="flex-1">
-        <img src={image.desktop} alt={name} />
+        <button
+          onClick={() => navigate(-1)}
+          className="text-[#979797] hover:underline"
+        >
+          Go back
+        </button>
+        <img src={image.desktop} alt={name} className="mt-4" />
       </div>
       <div className=" flex flex-1 flex-col items-start justify-center">
         {item.new ? (

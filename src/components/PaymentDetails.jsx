@@ -42,18 +42,20 @@ export const PaymentDetails = () => {
         {selectedPayment === "eMoney" ? (
           <>
             <form className="flex flex-col">
-              <span className="mb-1 text-sm font-bold text-black">Address</span>
+              <span className="mb-1 text-sm font-bold text-black">
+                e-Money Number
+              </span>
               <input
                 type="text"
-                placeholder="1137 Williams Avenue"
+                placeholder="2385312932"
                 className={inputStyles}
               />
             </form>
             <form className="flex flex-col">
               <span className="mb-1 text-sm font-bold text-black">
-                ZIP Code
+                e-Money PIN
               </span>
-              <input type="text" placeholder="120091" className={inputStyles} />
+              <input type="text" placeholder="6131" className={inputStyles} />
             </form>
           </>
         ) : (

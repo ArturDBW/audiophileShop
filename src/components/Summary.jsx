@@ -18,6 +18,12 @@ export const Summary = () => {
 
   const [openModalFinalInfo, setOpenModalFinalInfo] = useState(false);
 
+  if (openModalFinalInfo === true) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "visible";
+  }
+
   return (
     <div className="my-10 flex-grow-[1] items-center rounded-lg bg-white p-6">
       <h4 className="mb-4 text-lg font-bold">SUMMARY</h4>
