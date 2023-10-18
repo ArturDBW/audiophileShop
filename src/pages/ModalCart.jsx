@@ -7,6 +7,7 @@ import { LinkButton } from "../elements/LinkButton";
 export const ModalCart = ({ setOpenModalCart, openModalCart }) => {
   const cart = useSelector(getBasket);
   const dispatch = useDispatch();
+  console.log(cart);
 
   const totalAmount = cart.reduce((acc, curr) => {
     return acc + curr.totalPrice;
