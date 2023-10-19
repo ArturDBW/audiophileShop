@@ -7,7 +7,7 @@
     "image": {
       "mobile": "src/assets/product-yx1-earphones/mobile/image-product.jpg",
       "tablet": "src/assets/product-yx1-earphones/tablet/image-product.jpg",
-      "desktop": "/src/assets/product-yx1-earphones/desktop/image-product.jpg",
+      "desktop": "../src/assets/product-yx1-earphones/desktop/image-product.jpg",
       "cart": "/src/assets/cart/image-yx1-earphones.jpg"
     },
     "category": "earphones",
@@ -98,7 +98,7 @@
     "image": {
       "mobile": "src/assets/product-xx59-headphones/mobile/image-product.jpg",
       "tablet": "src/assets/product-xx59-headphones/tablet/image-product.jpg",
-      "desktop": "/src/assets/product-xx59-headphones/desktop/image-product.jpg",
+      "desktop": "./src/assets/product-xx59-headphones/desktop/image-product.jpg",
       "cart": "/src/assets/cart/image-xx59-headphones.jpg"
     },
     "category": "headphones",
