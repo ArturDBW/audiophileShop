@@ -3,7 +3,7 @@ export const ShippingInfo = () => {
   return (
     <div>
       <h3 className="mb-4 mt-8 font-bold text-[#D87D4A]">SHIPPING INFO</h3>
-      <div className="grid grid-cols-2 gap-8">
+      <div className="grid grid-cols-2 gap-8 max-lg:grid-cols-1">
         <form className="col-span-full flex flex-col">
           <span className="mb-1 text-sm font-bold text-black">Address</span>
           <input

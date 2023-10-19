@@ -13,7 +13,7 @@ export const PaymentDetails = () => {
   return (
     <div>
       <h3 className="mb-4 mt-8 font-bold text-[#D87D4A]">PAYMENT DETAILS</h3>
-      <div className="grid grid-cols-2 gap-8 ">
+      <div className="grid grid-cols-2 gap-8 max-lg:grid-cols-1">
         <div>
           <span className="text-sm font-bold">Payment Method</span>
         </div>
