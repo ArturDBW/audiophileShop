@@ -3,16 +3,16 @@ import { SuggestProduct } from "./SuggestProduct";
 
 export const SuggestProducts = ({ item }) => {
   return (
-    <>
-      <h2 className="mt-20 text-center text-4xl font-bold">
+    <div className="mx-10">
+      <h2 className="mt-20 text-center text-4xl font-bold max-md:text-3xl">
         You may also like
       </h2>
-      <div className="mx-auto  mt-10 flex max-w-[1440px] gap-10">
+      <div className="mx-auto  mt-10 flex max-w-[1440px] gap-10 max-md:gap-5 max-sm:flex-col">
         {item.others.map((item, i) => (
           <SuggestProduct key={i} item={item} />
         ))}
       </div>
-    </>
+    </div>
   );
 };
 

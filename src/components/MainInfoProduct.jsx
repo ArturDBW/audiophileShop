@@ -33,15 +33,15 @@ export const MainInfoProduct = ({ item }) => {
   };
 
   return (
-    <div className="mx-auto mt-24 flex max-w-[1440px] gap-x-[10%]">
+    <div className="mx-auto mt-24 flex max-w-[1440px] gap-x-[10%] px-10 max-lg:mt-8 max-lg:gap-6 max-md:flex-col">
       <div className="flex-1">
         <button
           onClick={() => navigate(-1)}
-          className="text-[#979797] hover:underline"
+          className="mb-4 text-[#979797] hover:underline"
         >
           Go back
         </button>
-        <img src={image.desktop} alt={name} className="mt-4" />
+        <img src={image.desktop} alt={name} />
       </div>
       <div className=" flex flex-1 flex-col items-start justify-center">
         {item.new ? (
@@ -49,10 +49,12 @@ export const MainInfoProduct = ({ item }) => {
             New product
           </span>
         ) : null}
-        <h4 className="text-[40px] font-bold uppercase leading-10 text-black">
+        <h4 className="text-4xl font-bold uppercase text-black max-lg:text-2xl">
           {name}
         </h4>
-        <p className="mb-6 mt-10 text-base text-[#979797]">{description}</p>
+        <p className="mb-6 mt-10 text-base text-[#979797] max-lg:mb-3 max-lg:mt-6">
+          {description}
+        </p>
         <span className="mb-6 text-lg font-bold">$ {price}</span>
         <div className="flex space-x-6">
           <div className="flex items-center space-x-6 bg-[#F1F1F1] text-sm font-bold tracking-[1px]">

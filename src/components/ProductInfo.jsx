@@ -35,13 +35,13 @@ export const ProductInfo = ({ item }) => {
 
 ProductInfo.propTypes = {
   item: PropTypes.shape({
-    name: PropTypes.string,
-    slug: PropTypes.string,
-    category: PropTypes.string,
-    description: PropTypes.string,
-    image: PropTypes.object,
-    new: PropTypes.bool,
-    id: PropTypes.number,
-    layout: PropTypes.string,
-  }),
+    name: PropTypes.string.isRequired,
+    slug: PropTypes.string.isRequired,
+    category: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    image: PropTypes.object.isRequired,
+    new: PropTypes.bool.isRequired,
+    id: PropTypes.number.isRequired,
+    layout: PropTypes.string.isRequired,
+  }).isRequired,
 };

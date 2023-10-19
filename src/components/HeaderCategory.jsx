@@ -13,5 +13,5 @@ export const HeaderCategory = ({ children }) => {
 };
 
 HeaderCategory.propTypes = {
-  children: PropTypes.string,
+  children: PropTypes.string.isRequired,
 };
