@@ -1,10 +1,14 @@
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
+
 const linkStyles = "transition-all hover:text-[#D87D4A]";
 
-export const Navigation = () => {
+export const Navigation = ({ styleClassHidden, styleClassFlex }) => {
   return (
-    <nav>
-      <ul className="bold space-x-9 text-[13px] font-bold uppercase tracking-[3px] text-white ">
+    <nav className={`${styleClassHidden}`}>
+      <ul
+        className={`bold space-x-9 text-sm font-bold uppercase tracking-[3px] text-white ${styleClassFlex}`}
+      >
         <Link to="/" className={linkStyles}>
           Home
         </Link>
@@ -20,4 +24,9 @@ export const Navigation = () => {
       </ul>
     </nav>
   );
+};
+
+Navigation.propTypes = {
+  styleClassHidden: PropTypes.string.isRequired,
+  styleClassFlex: PropTypes.string.isRequired,
 };

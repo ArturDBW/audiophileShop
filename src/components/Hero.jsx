@@ -2,9 +2,9 @@ import { LinkButton } from "../elements/LinkButton";
 
 export const Hero = () => {
   return (
-    <section className="h-[calc(100vh-72px)] bg-hero bg-cover bg-center">
+    <section className="h-[calc(100vh-72px)] bg-hero bg-cover bg-center px-10">
       <div className="mx-auto h-full max-w-[1440px] border-t border-[#979797]">
-        <div className="flex h-full max-w-[400px] flex-col items-start justify-center">
+        <div className="flex h-full max-w-lg flex-col items-start justify-center max-lg:mx-auto max-lg:items-center max-lg:text-center">
           <h4 className="text-sm tracking-[8px] text-[#747171]">NEW PRODUCT</h4>
           <h1 className="mt-8 text-[56px] font-bold leading-[60px] text-white">
             XX99 MARK || HEADPHONES

@@ -7,12 +7,16 @@ import { Instagram } from "../svg/Instagram";
 export const Footer = () => {
   return (
     <footer className=" bg-[#1a1919]">
-      <div className="mx-auto max-w-[1440px] py-12">
-        <div className="flex justify-between">
-          <Logo />
-          <Navigation />
+      <div className="mx-auto max-w-[1440px] px-10 py-12 text-center">
+        <div className="flex justify-between max-md:flex-col max-md:space-y-10">
+          <Logo styleClass="mx-auto" />
+          <Navigation
+            styleClassFlex={
+              "max-sm:flex flex-col max-sm:space-x-0 max-sm:space-y-8"
+            }
+          />
         </div>
-        <div className="mt-10 flex">
+        <div className="mt-10 flex max-sm:flex-col max-sm:space-y-10">
           <div className="flex-1">
             <p className="font-[15px] text-[#979797]">
               Audiophile is an all in one stop to fulfill your audio needs.
@@ -21,7 +25,7 @@ export const Footer = () => {
               and visit our demo facility - we`re open 7 days a week.
             </p>
           </div>
-          <div className="flex flex-1 items-end justify-end space-x-4 text-white">
+          <div className="flex flex-1 items-end justify-end space-x-4 text-white max-sm:justify-center">
             <Facebook />
             <Twitter />
             <Instagram />
