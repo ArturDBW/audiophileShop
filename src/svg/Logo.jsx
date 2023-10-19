@@ -16,5 +16,5 @@ export const Logo = ({ styleClass }) => {
 };
 
 Logo.propTypes = {
-  styleClass: PropTypes.string.isRequired,
+  styleClass: PropTypes.string,
 };

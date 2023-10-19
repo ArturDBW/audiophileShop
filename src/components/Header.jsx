@@ -19,6 +19,6 @@ export const Header = ({ openModalCart, setOpenModalCart }) => {
 };
 
 Header.propTypes = {
-  openModalCart: PropTypes.bool.isRequired,
-  setOpenModalCart: PropTypes.func.isRequired,
+  openModalCart: PropTypes.bool,
+  setOpenModalCart: PropTypes.func,
 };

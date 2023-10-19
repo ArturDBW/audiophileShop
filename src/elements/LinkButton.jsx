@@ -12,7 +12,7 @@ export const LinkButton = ({
     <Link
       to={to}
       onClick={onClick}
-      className={`px-8 py-4 text-sm font-bold uppercase tracking-[1px] transition-all ${strechStyleClass} ${backgroundStyleClass}`}
+      className={`px-8 py-4 text-sm font-bold uppercase tracking-[1px] transition-all max-[400px]:px-6 ${strechStyleClass} ${backgroundStyleClass}`}
     >
       {children}
     </Link>

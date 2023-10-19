@@ -27,6 +27,6 @@ export const Navigation = ({ styleClassHidden, styleClassFlex }) => {
 };
 
 Navigation.propTypes = {
-  styleClassHidden: PropTypes.string.isRequired,
-  styleClassFlex: PropTypes.string.isRequired,
+  styleClassHidden: PropTypes.string,
+  styleClassFlex: PropTypes.string,
 };

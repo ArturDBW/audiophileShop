@@ -35,7 +35,7 @@ ProductCategory.propTypes = {
 
 export const ProductsCategory = () => {
   return (
-    <section className="mx-auto mb-40 mt-72 flex max-w-[1440px] justify-between gap-10 px-10 max-xl:mt-32 max-lg:mt-12 max-lg:gap-4 max-sm:flex-col">
+    <section className="mx-auto mb-40 mt-72 flex max-w-[1440px] justify-between gap-10 px-10 max-xl:mt-32 max-lg:mt-12 max-lg:gap-4 max-sm:mb-24 max-sm:flex-col max-sm:px-3">
       <ProductCategory category={"headphones"} />
       <ProductCategory category={"speakers"} />
       <ProductCategory category={"earphones"} />

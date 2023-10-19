@@ -1,6 +1,8 @@
+import aboutUsImage from "../../src/assets/shared/mobile/image-best-gear.jpg";
+
 export const AboutUs = () => {
   return (
-    <section className="mx-auto my-36 flex max-w-[1440px] gap-10 px-10 max-lg:my-24 max-md:my-16 max-md:flex-col">
+    <section className="mx-auto my-36 flex max-w-[1440px] gap-10 px-10 max-lg:my-24 max-md:my-16 max-md:flex-col max-sm:px-3">
       <div className="mb-10 flex flex-1 flex-col justify-center max-md:flex-col-reverse">
         <div className="max-md:text-center">
           <h2 className="mb-10 text-4xl font-bold uppercase max-lg:mb-8 max-lg:text-3xl">
@@ -22,7 +24,7 @@ export const AboutUs = () => {
       <div className=" flex-1">
         <img
           className=" rounded-xl max-md:w-full"
-          src="../../src/assets/shared/mobile/image-best-gear.jpg"
+          src={aboutUsImage}
           alt="men with headphones"
         />
       </div>

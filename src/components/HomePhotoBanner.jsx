@@ -6,7 +6,7 @@ import { LinkButton } from "../elements/LinkButton";
 
 export const HomePhotoBanner = () => {
   return (
-    <section className="mx-auto grid  max-w-[1440px] grid-cols-2 gap-10 px-10 text-white">
+    <section className="mx-auto grid  max-w-[1440px] grid-cols-2 gap-10 px-10 text-white max-sm:px-3">
       <div className=" max-lg: max-lg: col-span-full flex items-center  justify-around overflow-hidden rounded-xl bg-[#D87D4A] pt-20 max-lg:flex-col max-lg:p-6">
         <img
           className=" mb-[-15px] w-[30%] max-lg:mb-12"
@@ -40,7 +40,7 @@ export const HomePhotoBanner = () => {
             alt="ZX7 Speaker"
           />
         </picture>
-        <div className="absolute left-[64px] top-[30%] text-black max-sm:left-[36px]">
+        <div className="absolute left-[64px] top-[30%] text-black max-sm:left-[36px] max-sm:top-[20%]">
           <h2 className="mb-10 text-3xl font-bold max-sm:text-2xl">
             ZX7 SPEAKER
           </h2>
@@ -59,9 +59,11 @@ export const HomePhotoBanner = () => {
           alt="YX1 Earphones"
         />
       </div>
-      <div className=" rounded-xl bg-[#F1F1F1] text-black max-md:col-span-full max-md:py-10">
+      <div className=" rounded-xl bg-[#F1F1F1] text-black max-md:col-span-full max-md:py-10 max-sm:py-2">
         <div className="flex h-full flex-col items-start justify-center p-16 max-lg:px-10 max-lg:py-4">
-          <h2 className="mb-10 text-[32px] font-bold">YX1 EARPHONES</h2>
+          <h2 className="mb-10 text-[32px] font-bold max-sm:text-2xl">
+            YX1 EARPHONES
+          </h2>
           <LinkButton
             to={"/products/yx1-earphones"}
             backgroundStyleClass={`hover:bg-[#000] hover:text-white text-black bg-transparent border border-black`}
