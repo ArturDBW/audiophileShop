@@ -31,7 +31,7 @@ export const Footer = () => {
             <Instagram />
           </div>
         </div>
-        <div className="mt-20 font-[15px] text-[#979797]">
+        <div className="mt-20 font-[15px] text-[#979797] max-sm:text-center">
           <span>Copyright 2021. All Rights Reserved</span>
         </div>
       </div>
