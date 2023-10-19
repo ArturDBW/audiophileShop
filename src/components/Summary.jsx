@@ -17,6 +17,10 @@ export const Summary = () => {
   const fullOrderPrice = totalAmount + shippingCost;
 
   const [openModalFinalInfo, setOpenModalFinalInfo] = useState(false);
+  const handleFinalOrder = () => {
+    setOpenModalFinalInfo(!openModalFinalInfo);
+    window.scrollTo(0, 0);
+  };
 
   if (openModalFinalInfo === true) {
     document.body.style.overflow = "hidden";
@@ -47,7 +51,7 @@ export const Summary = () => {
         <span className="font-bold text-[#D87D4A]">$ {fullOrderPrice}</span>
       </div>
       <LinkButton
-        onClick={() => setOpenModalFinalInfo(!openModalFinalInfo)}
+        onClick={() => handleFinalOrder()}
         strechStyleClass={`flex justify-center`}
         backgroundStyleClass={`bg-[#D87D4A] hover:bg-[#fbaf85] text-white`}
       >

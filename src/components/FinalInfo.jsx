@@ -21,13 +21,13 @@ export const FinalInfo = ({ fullOrderPrice }) => {
 
   return (
     <div className="absolute  left-0 top-0  h-full w-full overflow-hidden bg-black bg-opacity-20">
-      <div className="absolute bottom-2/4 right-2/4 translate-x-2/4 translate-y-1/2 rounded-lg bg-white p-6">
+      <div className="absolute bottom-2/4 right-2/4 translate-x-2/4 translate-y-1/2 rounded-lg bg-white p-6 max-sm:w-4/5">
         <OrderConfirmation />
         <h2 className="my-4 text-3xl font-bold">Thank you for your order</h2>
         <span className="text-[#979797]">
           You will receive an email confirmation shortly.
         </span>
-        <div className="my-8 flex">
+        <div className="my-8 flex max-sm:flex-col">
           <div className="bg-[#F1F1F1] p-4">
             {firstProduct.map((item) => (
               <CartProduct
