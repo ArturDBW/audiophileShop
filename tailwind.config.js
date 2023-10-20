@@ -3,7 +3,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        hero: "url('../src/assets/home/desktop/image-hero.jpg')",
+        hero: "url/assets/image-hero.jpg')",
       },
     },
   },

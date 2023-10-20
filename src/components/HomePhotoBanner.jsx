@@ -1,7 +1,7 @@
-import ZX9Speaker from "../assets/home/desktop/image-speaker-zx9.png";
-import ZX7Speaker from "../assets/home/desktop/image-speaker-zx7.jpg";
-import ZX7SpeakerTablet from "../assets/home/tablet/image-speaker-zx7.jpg";
-import Earphones from "../assets/home/desktop/image-earphones-yx1.jpg";
+import ZX9Speaker from "/assets/home/desktop/image-speaker-zx9.png";
+import ZX7Speaker from "/assets/home/desktop/image-speaker-zx7.jpg";
+import ZX7SpeakerTablet from "/assets/home/tablet/image-speaker-zx7.jpg";
+import Earphones from "/assets/home/desktop/image-earphones-yx1.jpg";
 import { LinkButton } from "../elements/LinkButton";
 
 export const HomePhotoBanner = () => {
