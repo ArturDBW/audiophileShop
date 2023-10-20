@@ -6,7 +6,7 @@ export const ProductInfo = ({ item }) => {
   const { name, slug, description, image, layout } = item;
 
   return (
-    <div className="mx-auto mt-36 flex max-w-[1440px] gap-x-[10%] px-10 max-md:mt-16 max-md:flex-col">
+    <div className="mx-auto mt-36 flex max-w-[1440px] gap-x-[10%] px-10 max-md:mt-16 max-md:flex-col max-md:px-3">
       <div className={`flex-1 ${layout === "right" ? "order-1 " : ""}`}>
         <img src={image.desktop} alt={name} className="" />
       </div>

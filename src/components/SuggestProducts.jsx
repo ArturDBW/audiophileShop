@@ -3,7 +3,7 @@ import { SuggestProduct } from "./SuggestProduct";
 
 export const SuggestProducts = ({ item }) => {
   return (
-    <div className="mx-10">
+    <div className="px-10 max-md:px-3">
       <h2 className="mt-20 text-center text-4xl font-bold max-md:text-3xl">
         You may also like
       </h2>

@@ -33,7 +33,7 @@ export const MainInfoProduct = ({ item }) => {
   };
 
   return (
-    <div className="mx-auto mt-24 flex max-w-[1440px] gap-x-[10%] px-10 max-lg:mt-8 max-lg:gap-6 max-md:flex-col">
+    <div className="mx-auto mt-24 flex max-w-[1440px] gap-x-[10%] px-10 max-lg:mt-8 max-lg:gap-6 max-md:flex-col max-md:px-3">
       <div className="flex-1">
         <button
           onClick={() => navigate(-1)}

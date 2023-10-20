@@ -4,7 +4,7 @@ export const PhotosProduct = ({ item }) => {
   const { gallery, name } = item;
   return (
     <div className="mx-auto max-w-[1440px]">
-      <div className="mx-10 mt-20 grid max-w-[1440px] grid-cols-[2_min-content] grid-rows-2 justify-items-start gap-10 max-lg:grid-cols-1">
+      <div className="mt-20 grid max-w-[1440px] grid-cols-[2_min-content] grid-rows-2 justify-items-start gap-10 px-10 max-lg:grid-cols-1 max-md:gap-3 max-md:px-3">
         <img
           src={gallery.first.desktop}
           alt={name}
