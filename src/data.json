@@ -7,7 +7,7 @@
     "image": {
       "mobile": "src/assets/product-yx1-earphones/mobile/image-product.jpg",
       "tablet": "src/assets/product-yx1-earphones/tablet/image-product.jpg",
-      "desktop": "../public/assets/product-yx1-earphones/desktop/image-product.jpg",
+      "desktop": "/public/assets/product-yx1-earphones/desktop/image-product.jpg",
       "cart": "/src/assets/cart/image-yx1-earphones.jpg"
     },
     "category": "earphones",
