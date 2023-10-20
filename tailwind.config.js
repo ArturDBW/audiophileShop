@@ -3,9 +3,11 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        hero: "url('../src/assets/home/desktop/image-hero.jpg')",
+        hero: "url('../../public/assets/home/desktop/image-hero.jpg')",
       },
     },
   },
   plugins: [],
 };
+
+// hero: "url('../src/assets/home/desktop/image-hero.jpg')",
