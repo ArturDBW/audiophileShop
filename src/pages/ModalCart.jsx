@@ -22,7 +22,7 @@ export const ModalCart = ({ setOpenModalCart, openModalCart }) => {
         onClick={(e) => {
           e.stopPropagation();
         }}
-        className="fixed right-60 top-20 rounded-lg bg-white p-6 max-2xl:right-2"
+        className="fixed right-60 top-20 rounded-lg bg-white p-6 max-2xl:right-2 max-sm:right-0"
       >
         {cart.length < 1 ? (
           <EmptyCart />
