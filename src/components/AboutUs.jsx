@@ -1,4 +1,4 @@
-import aboutUsImage from "../../public/assets/shared/mobile/image-best-gear.jpg";
+import aboutUsImage from "../assets/shared/mobile/image-best-gear.jpg";
 
 export const AboutUs = () => {
   return (
