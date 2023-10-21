@@ -3,6 +3,9 @@ import PropTypes from "prop-types";
 import { LinkButton } from "../elements/LinkButton";
 
 export const SuggestProduct = ({ item }) => {
+  const scrollToUp = () => {
+    window.scrollTo(0, 0);
+  };
   const { image, name, slug } = item;
   return (
     <div>
@@ -13,6 +16,7 @@ export const SuggestProduct = ({ item }) => {
         <h3 className="py-10 text-2xl font-bold">{name}</h3>
         <LinkButton
           to={`/products/${slug}`}
+          onClick={() => scrollToUp()}
           backgroundStyleClass={`bg-[#D87D4A] hover:bg-[#fbaf85] text-white`}
         >
           See product
