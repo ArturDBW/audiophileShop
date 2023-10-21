@@ -17,7 +17,7 @@ export const PaymentDetails = () => {
         <div>
           <span className="text-sm font-bold">Payment Method</span>
         </div>
-        <form className="flex flex-col">
+        <div className="flex flex-col">
           <label className={labelStyles}>
             <input
               type="radio"
@@ -37,11 +37,11 @@ export const PaymentDetails = () => {
             />
             <span className="px-6 py-4 font-bold">Cash on Delivery</span>
           </label>
-        </form>
+        </div>
 
         {selectedPayment === "eMoney" ? (
           <>
-            <form className="flex flex-col">
+            <div className="flex flex-col">
               <span className="mb-1 text-sm font-bold text-black">
                 e-Money Number
               </span>
@@ -50,13 +50,13 @@ export const PaymentDetails = () => {
                 placeholder="2385312932"
                 className={inputStyles}
               />
-            </form>
-            <form className="flex flex-col">
+            </div>
+            <div className="flex flex-col">
               <span className="mb-1 text-sm font-bold text-black">
                 e-Money PIN
               </span>
               <input type="text" placeholder="6131" className={inputStyles} />
-            </form>
+            </div>
           </>
         ) : (
           <div className=" col-span-full flex items-center space-x-6">
