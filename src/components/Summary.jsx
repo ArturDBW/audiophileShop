@@ -15,9 +15,11 @@ export const Summary = () => {
   const shippingCost = 50;
   const vatCost = totalAmount * 0.23;
   const fullOrderPrice = totalAmount + shippingCost;
+  const lengthCartCondition = cart.length >= 1;
 
   const [openModalFinalInfo, setOpenModalFinalInfo] = useState(false);
   const handleFinalOrder = () => {
+    if (lengthCartCondition === false) return;
     setOpenModalFinalInfo(!openModalFinalInfo);
     window.scrollTo(0, 0);
   };
