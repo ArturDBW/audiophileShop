@@ -30,7 +30,7 @@ export const BurgerMenu = () => {
             <Navigation
               onClick={() => setShowBurgerMenu(!showBurgerMenu)}
               styleClassFlex={
-                "flex-col flex space-x-0 space-y-20 text-xl items-center pt-7 max-sm:text-lg text-center"
+                "flex-col flex max-md:space-x-0 space-y-20 text-xl items-center pt-7 max-sm:text-lg text-center"
               }
             />
           </div>
