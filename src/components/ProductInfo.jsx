@@ -8,7 +8,7 @@ export const ProductInfo = ({ item }) => {
   return (
     <div className="mx-auto mt-36 flex max-w-[1440px] gap-x-[10%] px-10 max-md:mt-16 max-md:flex-col max-md:px-3">
       <div className={`flex-1 ${layout === "right" ? "order-1 " : ""}`}>
-        <img src={image.desktop} alt={name} className="" />
+        <img src={image.desktop} alt={name} />
       </div>
       <div className="max-sm: flex flex-1 flex-col items-start justify-center max-md:order-first max-md:mb-10 max-md:mt-5 max-md:items-center max-md:text-center">
         {item.new ? (

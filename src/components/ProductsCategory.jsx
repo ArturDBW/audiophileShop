@@ -29,13 +29,14 @@ const ProductCategory = ({ category }) => {
     </div>
   );
 };
+
 ProductCategory.propTypes = {
   category: PropTypes.string,
 };
 
 export const ProductsCategory = () => {
   return (
-    <section className="mx-auto mb-28 mt-72 flex max-w-[1440px] justify-between gap-10 px-10 pb-5 max-xl:mt-32 max-lg:mt-0 max-lg:gap-4 max-sm:mb-24 max-sm:mt-10 max-sm:flex-col max-sm:px-3">
+    <section className="mx-auto mb-28 mt-64 flex max-w-[1440px] justify-between gap-10 px-10 pb-5 max-xl:mt-32 max-lg:mt-0 max-lg:gap-4 max-sm:mb-24 max-sm:mt-10 max-sm:flex-col max-sm:px-3">
       <ProductCategory category={"headphones"} />
       <ProductCategory category={"speakers"} />
       <ProductCategory category={"earphones"} />

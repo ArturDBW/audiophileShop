@@ -1,9 +1,9 @@
 import PropTypes from "prop-types";
 import { useDispatch, useSelector } from "react-redux";
 import { clearBasket, getBasket } from "../slice/basketSlice";
-import { CartProduct } from "../components/CartProduct";
+import { CartProduct } from "./CartProduct";
 import { LinkButton } from "../elements/LinkButton";
-import { EmptyCart } from "../components/EmptyCart";
+import { EmptyCart } from "./EmptyCart";
 
 export const ModalCart = ({ setOpenModalCart, openModalCart }) => {
   const cart = useSelector(getBasket);
@@ -16,7 +16,7 @@ export const ModalCart = ({ setOpenModalCart, openModalCart }) => {
   return (
     <div
       onClick={() => setOpenModalCart(!openModalCart)}
-      className="absolute  left-0 top-0  h-full w-full overflow-hidden bg-black bg-opacity-20"
+      className="absolute left-0 top-0 h-full w-full overflow-hidden bg-black bg-opacity-20"
     >
       <div
         onClick={(e) => {
