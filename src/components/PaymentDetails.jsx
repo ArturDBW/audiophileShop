@@ -41,7 +41,7 @@ export const PaymentDetails = () => {
 
         {selectedPayment === "eMoney" ? (
           <>
-            <div className="flex flex-col space-x-6">
+            <div className="flex flex-col gap-x-6">
               <span className="mb-1 text-sm font-bold text-black">
                 e-Money Number
               </span>
@@ -59,7 +59,7 @@ export const PaymentDetails = () => {
             </div>
           </>
         ) : (
-          <div className=" col-span-full flex items-center space-x-6">
+          <div className=" gap col-span-full flex items-center">
             <div>
               <CashOnDelivery />
             </div>
