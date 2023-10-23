@@ -59,7 +59,7 @@ export const PaymentDetails = () => {
             </div>
           </>
         ) : (
-          <div className=" gap col-span-full flex items-center">
+          <div className="col-span-full flex items-center gap-x-3">
             <div>
               <CashOnDelivery />
             </div>
