@@ -7,12 +7,6 @@ import { ModalCart } from "../components/ModalCart";
 export const AppLayout = () => {
   const [openModalCart, setOpenModalCart] = useState(false);
 
-  if (openModalCart === true) {
-    document.body.style.overflow = "hidden";
-  } else {
-    document.body.style.overflow = "visible";
-  }
-
   return (
     <div>
       <Header

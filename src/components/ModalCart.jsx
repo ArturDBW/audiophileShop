@@ -13,6 +13,12 @@ export const ModalCart = ({ setOpenModalCart, openModalCart }) => {
     return acc + curr.totalPrice;
   }, 0);
 
+  if (openModalCart === true) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "visible";
+  }
+
   return (
     <div
       onClick={() => setOpenModalCart(!openModalCart)}
