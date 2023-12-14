@@ -2,7 +2,7 @@
 
 ## Description
 
-E-commerce with audiophies stuff 
+E-commerce with audiophies stuff that I created as challange from frontendentor.com
 
 ## Technologies
 - React
@@ -18,7 +18,7 @@ E-commerce with audiophies stuff
 
 ## What I learned
 
-Project audiophileShop is my first bigger project. First time when I used Redux and Tailwind. I also improved my React Router skills.
+Project audiophileShop is my first bigger project. First time when I used Redux and Tailwind. I also improved my React Router skills. I got raedy for use file with desing in Figma and I mapped it which allowed me to learn how to perfectly reproduce design.
 
 ## Features
 - Add/Remove products from the cart
