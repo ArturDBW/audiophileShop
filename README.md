@@ -1,8 +1,27 @@
-# React + Vite
+# audiophileShop
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+E-commerce with audiophies stuff 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies
+- React
+- JavaScript
+- Vite
+- TailwindCSS
+- Redux
+- React Router
+
+## How to run app
+npm install
+npm run dev
+
+## What I learned
+
+Project audiophileShop is my first bigger project. First time when I used Redux and Tailwind. I also improved my React Router skills.
+
+## Features
+- Add/Remove products from the cart
+- Edit product quantities in the cart
+- Calculating the total cost (include VAT and delivery)
+- Summary of purchased items
