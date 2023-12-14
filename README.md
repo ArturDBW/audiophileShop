@@ -13,8 +13,8 @@ E-commerce with audiophies stuff
 - React Router
 
 ## How to run app
-npm install
-npm run dev
+- npm install
+- npm run dev
 
 ## What I learned
 
